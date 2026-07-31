@@ -8,7 +8,7 @@ Repository: <https://github.com/rolando-rubilar/Extremes>
 
 Rolando Rubilar-Torrealba, Karime Chahuán-Jiménez, Hanns de la Fuente-Mella, Martín Galaz, and Joaquín Astorga.
 
-## Repository structure
+## Repository structure in "codes and data.zip"
 
 - `code/analysis_fractional_tail_v16.py`: regenerates all numerical tables.
 - `code/make_figures_v16.py`: regenerates the five manuscript figures.
@@ -37,17 +37,6 @@ python code/analysis_fractional_tail_v16.py --input-dir data --out-dir outputs_c
 
 The full analysis uses fixed random seeds recorded in `outputs/manifest_v16.json`. The manifest also contains SHA256 hashes of the six input series, the common sample window, and the threshold grid. All numerical tables are generated through a single analysis script; all figures are generated through a separate figure script.
 
-## Compiling the manuscript
-
-From `manuscript/`, run:
-
-```bash
-pdflatex fractional_tail_risk_regimes_mdpi_v16.tex
-pdflatex fractional_tail_risk_regimes_mdpi_v16.tex
-pdflatex fractional_tail_risk_regimes_mdpi_v16.tex
-```
-
-The bibliography is embedded in the LaTeX source, so no BibTeX step is required.
 
 ## Data provenance
 
